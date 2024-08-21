@@ -1,4 +1,6 @@
-# OpenAI Assistants API Quickstart
+# Multiversity
+
+### Teaching Assistants
 
 A quick-start template using the OpenAI [Assistants API](https://platform.openai.com/docs/assistants/overview) with [Next.js](https://nextjs.org/docs).
 <br/>
@@ -36,11 +38,6 @@ npm run dev
 
 ### 5. Navigate to [http://localhost:3000](http://localhost:3000).
 
-## Deployment
-
-You can deploy this project to Vercel or any other platform that supports Next.js.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fopenai%2Fopenai-assistants-quickstart&env=OPENAI_API_KEY,OPENAI_ASSISTANT_ID&envDescription=API%20Keys%20and%20Instructions&envLink=https%3A%2F%2Fgithub.com%2Fopenai%2Fopenai-assistants-quickstart%2Fblob%2Fmain%2F.env.example)
 
 ## Overview
 
@@ -67,7 +64,3 @@ The main logic for chat will be found in the `Chat` component in `app/components
 - `api/assistants/threads/[threadId]/messages` - `POST`: send message to assistant
 - `api/assistants/threads/[threadId]/actions` - `POST`: inform assistant of the result of a function it decided to call
 - `api/assistants/files` - `GET`/`POST`/`DELETE`: fetch, upload, and delete assistant files for file search
-
-## Feedback
-
-Let us know if you have any thoughts, questions, or feedback in [this form](https://docs.google.com/forms/d/e/1FAIpQLScn_RSBryMXCZjCyWV4_ebctksVvQYWkrq90iN21l1HLv3kPg/viewform?usp=sf_link)!
