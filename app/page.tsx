@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <main className={styles.main}>
       <div className={styles.title}>
-        Explore sample apps built with Assistants API
+        Explore Apps
       </div>
       <div className={styles.container}>
         {Object.entries(categories).map(([name, url]) => (
