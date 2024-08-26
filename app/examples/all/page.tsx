@@ -3,8 +3,8 @@
 import React, { useState } from "react";
 import styles from "./page.module.css";
 import Chat from "../../components/chat";
-import WeatherWidget from "../../components/weather-widget";
-import { getWeather } from "../../utils/weather";
+import WeatherWidget from "../../components/tutor-widget";
+import { getWeather } from "../../utils/textbook";
 import FileViewer from "../../components/file-viewer";
 
 const FunctionCalling = () => {
