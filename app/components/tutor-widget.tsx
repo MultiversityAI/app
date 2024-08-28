@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./tutor-widget.module.css";
 
-const WeatherWidget = ({
+const TutorWidget = ({
   location = "---",
   temperature = "---",
   conditions = "Sunny",
@@ -41,4 +41,4 @@ const WeatherWidget = ({
   );
 };
 
-export default WeatherWidget;
+export default TutorWidget;

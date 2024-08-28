@@ -3,18 +3,18 @@
 import React, { useState } from "react";
 import styles from "./page.module.css";
 import Chat from "../../components/chat";
-import WeatherWidget from "../../components/tutor-widget";
-import { getWeather } from "../../utils/textbook";
+import TutorWidget from "../../components/tutor-widget";
+import { getContent } from "../../utils/textbook";
 import FileViewer from "../../components/file-viewer";
 
 const FunctionCalling = () => {
-  const [weatherData, setWeatherData] = useState({});
+  const [content, setContent] = useState({});
 
   const functionCallHandler = async (call) => {
-    if (call?.function?.name !== "get_weather") return;
+    if (call?.function?.name !== "get_content") return;
     const args = JSON.parse(call.function.arguments);
-    const data = getWeather(args.location);
-    setWeatherData(data);
+    const data = getContent(args.location);
+    setContent(data);
     return JSON.stringify(data);
   };
 
@@ -42,7 +42,7 @@ const FunctionCalling = () => {
     <main className={styles.main}>
       <div className={styles.container}>
         <div className={styles.column}>
-          <WeatherWidget {...weatherData} />
+          <TutorWidget {...content} />
           <FileViewer />
         </div>
         <div className={styles.chatContainer}>
